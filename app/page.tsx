@@ -38,7 +38,7 @@ export default function Portfolio() {
       specialization: 'Artificial Intelligence & Machine Learning',
       university: 'Keshav Memorial Institute of Technology, Hyderabad, India',
       period: 'June - 2026 (Expected)',
-      cgpa: '8.35',
+      cgpa: '8.47',
       coursework: ['Data Structures & Algorithms', 'NLP', 'Web Technologies', 'Object Oriented Programming', 'Software Engineering', 'Operating Systems', 'Artificial Intelligence', 'Machine Learning']
     }
   ]
@@ -60,7 +60,7 @@ export default function Portfolio() {
       period: 'Oct 2023 - Dec 2023',
       github: 'https://github.com/Sudiksha-16/Desktop-Voice-Assistant', // Placeholder
       live: '#', // Placeholder
-      image: '/voice.jpg?height=300&width=500'
+      image: '/voice.png?height=300&width=500'
     },
     {
       title: 'NLP News Analyzer',
@@ -166,7 +166,7 @@ export default function Portfolio() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 border-t border-gray-800">
+        <section id="about" className="py-16 border-t border-gray-800 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2">
             <ChevronRight className="w-6 h-6" /> ABOUT
           </h2>
@@ -189,7 +189,7 @@ export default function Portfolio() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-16 border-t border-gray-800">
+        <section id="skills" className="py-16 border-t border-gray-800 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2">
             <ChevronRight className="w-6 h-6" /> SKILLS
           </h2>
@@ -219,16 +219,27 @@ export default function Portfolio() {
         </section>
 
         {/* Resume Section (Interactive) */}
-        <section id="resume" className="py-16 border-t border-gray-800">
+        <section id="resume" className="py-16 border-t border-gray-800 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2">
             <ChevronRight className="w-6 h-6" /> RESUME
           </h2>
           <div className="flex justify-end mb-6">
-            <Button variant="outline" className="rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 border-gray-700 dark:border-gray-700 bg-gray-800 dark:bg-gray-800 text-gray-100 hover:bg-gray-700 dark:hover:bg-gray-700">
-              <Download className="w-4 h-4" />
-              DOWNLOAD PDF
-            </Button>
-          </div>
+            <Button
+            variant="outline"
+            className="rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 border-gray-700 dark:border-gray-700 bg-gray-800 dark:bg-gray-800 text-gray-100 hover:bg-gray-700 dark:hover:bg-gray-700"
+            >
+              <a
+              href="/Sudiksha_Resume.pdf"
+              target="_blank"
+               rel="noopener noreferrer"
+               className="flex items-center gap-2"
+               >
+                <Download className="w-4 h-4" />
+                DOWNLOAD PDF
+                </a>
+                </Button>
+                </div>
+
           <Card className="bg-gray-900 border border-gray-800 p-6">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-2xl font-bold text-white">SD</div>
@@ -307,7 +318,7 @@ export default function Portfolio() {
         </section>
 
         {/* Hire Me Section */}
-        <section id="hire-me" className="py-16 border-t border-gray-800">
+        <section id="hire-me" className="py-16 border-t border-gray-800 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2">
             <ChevronRight className="w-6 h-6" /> HIRE ME
           </h2>
@@ -325,14 +336,18 @@ export default function Portfolio() {
               <li>Excellent communication and collaboration skills</li>
             </ul>
           </div>
-          <Button className="mt-8 bg-gray-800 text-white hover:bg-gray-700 border border-gray-700">
-            GET IN TOUCH <ArrowUpRight className="w-4 h-4 ml-2" />
-          </Button>
-          <p className="text-sm text-gray-500 mt-8 text-center">SCROLL FOR MORE</p>
-        </section>
+          <Button
+          asChild
+          className="mt-8 bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
+          >
+            <a href="#contact">
+              GET IN TOUCH <ArrowUpRight className="w-4 h-4 ml-2" />
+              </a>
+              </Button>
+              </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16 border-t border-gray-800 relative overflow-hidden">
+        <section id="projects" className="py-16 border-t border-gray-800 scroll-mt-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2 relative z-10">
             <ChevronRight className="w-6 h-6" /> PROJECTS
@@ -368,7 +383,7 @@ export default function Portfolio() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 border-t border-gray-800">
+        <section id="contact" className="py-16 border-t border-gray-800 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-8 text-gray-400 flex items-center gap-2">
             <ChevronRight className="w-6 h-6" /> CONTACT
           </h2>
@@ -445,7 +460,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-gray-800 text-center text-gray-600">
-        <p>&copy; 2024 Sudiksha D. All rights reserved.</p>
+        <p>&copy; 2026 Sudiksha D. All rights reserved.</p>
         <p className="text-xs mt-2">Built with v0</p>
       </footer>
 
